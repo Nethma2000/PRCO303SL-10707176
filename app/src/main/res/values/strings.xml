@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CareerNextGen</string>
+    <string name="logo_name">Career NextGen</string>
+
+    <string name="first_slide_title">Much useful and easy</string>
+    <string name="second_slide_title">Get the maximum use from advisors</string>
+    <string name="third_slide_title">It is the time.be ready</string>
+
+    <string name="first_slide_desc">With the use of modern technology, you can now touch up on each aspect related to career development!</string>
+    <string name="second_slide_desc">Career advisors are here to pave right way for your career.Keep the trust on us!</string>
+    <string name="third_slide_desc">Access various exciting functions to develop your professional skills...Be Ready.Lets go!</string>
+
+    <string name="skip_btn">Skip</string>
+    <string name="next_btn">Next</string>
+    <string name="let_get_started">Get Started</string>
+
+    <string name="otp_code_text1">Co</string>
+    <string name="otp_code_text2">de</string>
+    <string name="otp_verification_text">Verification</string>
+    <string name="otp_description_text">Enter one time password sent on\n+92333</string>
+
+</resources>
