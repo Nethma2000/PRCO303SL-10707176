@@ -10,4 +10,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="purple_back">#5c00a3</color>
     <color name="grey">#968d8d</color>
+    <color name="dark_yellow">#FFCC00</color>
 </resources>

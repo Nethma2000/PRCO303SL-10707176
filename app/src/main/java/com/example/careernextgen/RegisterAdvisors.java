@@ -16,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterAdvisors extends AppCompatActivity {
     float v = 0;
-    EditText regName, regEmail, regNic, regMobile, regAge, regScl, regPassword, regConfirm;
+    EditText regName, regEmail, regNic, regMobile, regQualification, regLinkedinprofile, regPassword, regDescription;
     Button addbtn;
 
     FirebaseDatabase rootNode;
@@ -35,10 +35,10 @@ public class RegisterAdvisors extends AppCompatActivity {
         regEmail = findViewById(R.id.reg_email);
         regNic = findViewById(R.id.reg_nic);
         regMobile = findViewById(R.id.reg_mobile);
-        regAge = findViewById(R.id.reg_age);
-        regScl = findViewById(R.id.reg_scl);
+        regQualification = findViewById(R.id.reg_age);
+        regLinkedinprofile = findViewById(R.id.reg_scl);
         regPassword = findViewById(R.id.reg_password);
-        regConfirm = findViewById(R.id.reg_confirm);
+        regDescription = findViewById(R.id.reg_confirm);
 
         addbtn =findViewById(R.id.addbtn);
 
@@ -53,12 +53,12 @@ public class RegisterAdvisors extends AppCompatActivity {
                 String email = regEmail.getText().toString();
                 String nic = regNic.getText().toString();
                 String mobile = regMobile.getText().toString();
-                String age = regAge.getText().toString();
-                String scl = regScl.getText().toString();
+                String qualification = regQualification.getText().toString();
+                String linkedinprofile = regLinkedinprofile.getText().toString();
                 String password = regPassword.getText().toString();
-                String confirm = regConfirm.getText().toString();
+                String description = regDescription.getText().toString();
 
-                AdvisorsHelperClass helperClass=new AdvisorsHelperClass(name,email,nic,mobile,password,age,scl);
+                AdvisorsHelperClass helperClass=new AdvisorsHelperClass(name,email,nic,mobile,password,qualification,linkedinprofile,description);
 
                 reference.child(mobile).setValue(helperClass);
                 Toast.makeText(RegisterAdvisors.this,"Added successfully",Toast.LENGTH_LONG).show();
@@ -66,10 +66,10 @@ public class RegisterAdvisors extends AppCompatActivity {
                 regEmail.setText(null);
                 regNic.setText(null);
                 regMobile.setText(null);
-                regAge.setText(null);
-                regScl.setText(null);
+                regQualification.setText(null);
+                regLinkedinprofile.setText(null);
                 regPassword.setText(null);
-                regConfirm.setText(null);
+                regDescription.setText(null);
 
             }
         });

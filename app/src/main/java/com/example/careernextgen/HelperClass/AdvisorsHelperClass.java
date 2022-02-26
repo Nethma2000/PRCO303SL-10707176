@@ -2,20 +2,20 @@ package com.example.careernextgen.HelperClass;
 
 public class AdvisorsHelperClass {
 
-    String name,email,nic,mobile,age,scl,password,confirm;
+    String name,email,nic,mobile,qualification,linkedinprofile,password,description;
     public AdvisorsHelperClass() {
 
     }
 
-    public AdvisorsHelperClass(String name, String email, String nic, String mobile, String password, String age, String scl) {
+    public AdvisorsHelperClass(String name, String email, String nic, String mobile, String password, String qualification, String linkedinprofile,String description) {
         this.name = name;
         this.email = email;
         this.nic = nic;
         this.mobile = mobile;
-        this.age = age;
-        this.scl = scl;
+        this.qualification = qualification;
+        this.linkedinprofile = linkedinprofile;
         this.password = password;
-        this.confirm = confirm;
+        this.description = description;
     }
 
     public String getName() {
@@ -51,20 +51,20 @@ public class AdvisorsHelperClass {
         this.mobile = mobile;
     }
 
-    public String getAge() {
-        return age;
+    public String getQualification() {
+        return qualification;
     }
 
-    public void setAge(String age) {
-        this.age = age;
+    public void setQualification(String age) {
+        this.qualification = qualification;
     }
 
-    public String getScl() {
-        return scl;
+    public String getLinkedinprofile() {
+        return linkedinprofile;
     }
 
-    public void setScl(String scl) {
-        this.scl = scl;
+    public void setLinkedinprofile(String scl) {
+        this.linkedinprofile = linkedinprofile;
     }
 
     public String getPassword() {
@@ -75,11 +75,11 @@ public class AdvisorsHelperClass {
         this.password = password;
     }
 
-    public String getConfirm() {
-        return confirm;
+    public String getDescription() {
+        return description;
     }
 
-    public void setConfirm(String confirm) {
-        this.confirm = confirm;
+    public void setDescription(String confirm) {
+        this.description = description;
     }
 }
