@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CareerNextGen">
-        <activity android:name=".RegisterAdvisors"></activity>
+        <activity android:name=".MathQuiz"></activity>
+        <activity android:name=".RegisterAdvisors" />
         <activity android:name=".CareerAdvisorDashboard" />
         <activity android:name=".AdminDashboard" />
         <activity android:name=".StudentDashboard" />

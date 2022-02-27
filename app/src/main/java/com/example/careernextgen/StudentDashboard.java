@@ -9,7 +9,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 public class StudentDashboard extends AppCompatActivity {
-    Button probtn;
+    Button probtn,quizbtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +25,15 @@ public class StudentDashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent passIntent = new Intent(StudentDashboard.this, UserProfile.class);
+                startActivity(passIntent);
+            }
+        });
+
+        quizbtn=findViewById(R.id.quiz_btn);
+        quizbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent passIntent = new Intent(StudentDashboard.this, MathQuiz.class);
                 startActivity(passIntent);
             }
         });
