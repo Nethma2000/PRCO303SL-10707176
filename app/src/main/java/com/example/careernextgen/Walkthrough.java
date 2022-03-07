@@ -21,11 +21,8 @@ import com.example.careernextgen.Sign.Login;
 public class Walkthrough extends AppCompatActivity {
     ViewPager viewPager;
     ViewPager2 viewpager2;
-
     LinearLayout dotsLayout;
-
     SliderAdapter sliderAdapter;
-
     TextView[] dots;
     Button letsGetStarted,skip_btn;
     Animation animation;
@@ -42,8 +39,6 @@ public class Walkthrough extends AppCompatActivity {
         dotsLayout=findViewById(R.id.dots);
         letsGetStarted=findViewById(R.id.get_started_btn);
 
-
-
         letsGetStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,11 +52,8 @@ public class Walkthrough extends AppCompatActivity {
         //call adapter
         sliderAdapter=new SliderAdapter(this);
         viewPager.setAdapter(sliderAdapter);
-
         addDots(0);
-
         viewPager.addOnPageChangeListener(changeListener);
-
         skip_btn = findViewById(R.id.skip_btn);
         skip_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,7 +64,6 @@ public class Walkthrough extends AppCompatActivity {
                 finish();
             }
         });
-
     }
 
     public void skip(View view){
@@ -80,8 +71,6 @@ public class Walkthrough extends AppCompatActivity {
 
     public void next(View view){
         viewPager.setCurrentItem(currentPos+1);
-
-
     }
 
     private void addDots(int position){

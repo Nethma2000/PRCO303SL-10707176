@@ -46,8 +46,6 @@ DatabaseReference reference;
         signupbtn = root.findViewById(R.id.signupbtn);
 
 
-
-
         signupbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -47,6 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="TextView"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/prog_timer" />
@@ -56,6 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="@color/black"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:textSize="24sp"
@@ -69,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="TextView"
-
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/tv_score"
         app:layout_constraintStart_toEndOf="@id/tv_timer"
@@ -98,6 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:height="200dp"
+                android:textColor="@color/black"
                 android:width="100dp"
                 android:backgroundTint="#B33771"
                 android:text="Button" />
@@ -108,6 +111,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:width="100dp"
+                android:textColor="@color/black"
                 android:backgroundTint="#833471"
                 android:height="200dp"
                 android:text="Button" />
@@ -123,6 +127,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:height="200dp"
+                android:textColor="@color/black"
                 android:backgroundTint="#6D214F"
                 android:text="Button" />
             <Button
@@ -130,6 +135,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:textColor="@color/black"
                 android:height="200dp"
                 android:backgroundTint="#82589F"
                 android:text="Button" />

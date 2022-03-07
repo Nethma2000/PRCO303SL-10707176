@@ -93,21 +93,15 @@ public class MathQuiz extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Button buttonClicked= (Button) v;
-
                 int answerSelected = Integer.parseInt(buttonClicked.getText().toString());
-
-
                 g.checkAnswer(answerSelected);
                 tv_score.setText(Integer.toString(g.getScore()));
                 nextTurn();
-
-
 
             }
         };
 
         btn_start.setOnClickListener(startButtonClickLister);
-
         btn_answer0.setOnClickListener(answerButtonClickListener);
         btn_answer1.setOnClickListener(answerButtonClickListener);
         btn_answer2.setOnClickListener(answerButtonClickListener);

@@ -8,14 +8,10 @@ public class Question {
     private int answer;
     private int [] answerArray;
     private  int answerPosition;
-
-
     private int upperLimit;
-
     private String questionPhrase;
 
     //generate random question
-
     public Question(int upperLimit){
         this.upperLimit=upperLimit;
         Random randomNumberMaker=new Random();
@@ -27,7 +23,6 @@ public class Question {
 
         this.answerPosition=randomNumberMaker.nextInt(4);
         this.answerArray=new int[] {0,1,2,3};
-
         this.answerArray[0]=answer+1;
         this.answerArray[1]=answer+10;
         this.answerArray[2]=answer-5;
